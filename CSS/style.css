@@ -94,3 +94,65 @@ header nav .branding {
 .hero .right {
     margin-top: -7rem;
 }
+
+                            /* Section part */
+
+section {
+    padding: 6rem;
+}
+
+section.about .about-me-img {
+    height: 450px;
+}
+
+section.about h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+section.about h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom:1rem;
+
+}
+
+section .container p {
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height:1.9rem;
+    margin-bottom: 2rem;
+}
+
+section.about .social {
+    display: flex;
+}
+
+section.about .social a {
+    background: var(--dark);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+
+section.about .social a img {
+
+    width: 100%;
+    height: 100%;
+    padding:.5rem;
+}
+
+section.about .social a:hover {
+    background: var(--primary)
+}
