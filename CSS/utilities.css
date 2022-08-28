@@ -10,6 +10,14 @@
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content:center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
 .btn {
     padding: .8rem 2rem;
     font-size: 1rem;
@@ -26,9 +34,20 @@
     color: var(--secondary);
 }
 
-
 .btn-primary:hover {
     background: transparent;
     border-color: var(--primary);
     color: var(--primary);
+}
+
+.btn-secondary {
+    color: var(--primary);
+    background: transparent;
+    border-color: var(--primary);
+}
+
+.btn-secondary:hover {
+    cursor:pointer;
+    background: var(--primary);
+    color: var(--secondary);
 }
