@@ -424,3 +424,98 @@ section.blog .blog-card .card-info p {
 section.blog .blog-card .card-info a.read-more {
     font-size: .8rem;
 }
+
+                            /* Contact part */
+
+section.contact-us {
+    background:var(--light)
+}      
+
+section.contact-us .contact-wrapper {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 4rem;
+}
+
+section.contact-us .contact-wrapper .card {
+    text-align: center;
+}
+
+section.contact-us .contact-wrapper .card img {
+    margin-bottom: 3rem;
+}
+
+section.contact-us .contact-wrapper .card h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact-us .contact-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+section.contact-us .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact-us .input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact-us .input-wrap-2 input {
+    margin-bottom: 2rem;
+}
+
+section.contact-us input {
+    padding: .5rem;
+    border: 1px solid var(--light);
+    font-size: .9rem;
+}
+
+section.contact-us .input-wrap-2 textarea {
+    padding: .5rem;
+    border: 1px solid var(--light);
+    font-size: .9rem;
+}
+
+section.contact-us .input-wrap-2 textarea:focus, section.contact-us input:focus {
+    outline: none;
+}
+
+section.contact-us .btn-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo {
+    margin-bottom: 3rem;
+    width: 150px;
+}
+
+footer .footer-socials  a {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer .footer-socials {
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+}
+
+footer .copyright {
+    color: var(--ternary);
+
+}
