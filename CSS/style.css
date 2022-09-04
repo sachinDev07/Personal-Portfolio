@@ -160,11 +160,11 @@ section.about .social a:hover {
 
                             /* Services part */
 
- .section-heading {
+.section-heading {
     color: var(--secondary);
     text-align: center;
     margin-bottom: 1rem;
-    line-height: .5;
+    line-height: .5rem;
 }
 
 .section-heading span {
@@ -226,3 +226,296 @@ section.services .card-wrapper {
     line-height: 1.6;
 }
 
+                            /* Freelancer part */
+
+section.freelancer {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)),url(../images/camera.png);
+    color:var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1 { 
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+section.freelancer p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-family: 'lato',sans-serif;
+}
+
+                           /* Review Section */
+
+
+section.reviews .slider .slide img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit:contain;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+section.reviews .slider .slide p {
+    font-family: 'lato', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slider .slide span {
+    font-size: .8rem;
+}
+
+.dots {
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.reviews .slider-dots {
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dots button {
+    font-size: 0;
+    width: 8px;
+    width:8px;
+    height:5px;
+    margin-right:0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button {
+    background: var(--primary);
+    width: 20px;
+}
+
+                           /* Work Section */
+
+section.work {
+    background: var(--light);
+}
+
+section.work .image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.work .image-wrapper .image-card{
+    position: relative;
+    height: 250px;
+}
+
+section.work .image-wrapper .image-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(61, 207, 211,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+section.work .image-wrapper .image-card:hover .overlay {
+    opacity: 1;
+}
+
+section.work .image-wrapper .image-card img {
+    height: 100%;
+    width: 100%;
+}
+
+section.work .image-wrapper .image-card .overlay a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+
+                            /* Blog part */
+
+section.blog {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.blog .container h1 {
+    color: var(--pure);
+}
+
+section.blog .container p {
+    margin-bottom: 3rem;
+}
+
+section.blog .blog-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.blog .blog-card .card-info {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.blog .blog-card .card-info h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: .5rem;
+}
+
+section.blog .blog-card .card-info a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.blog .blog-card .card-info a:hover{
+    color: var(--primary);
+}
+
+section.blog .blog-card .card {
+    background: var(--pure);
+}
+
+
+section.blog .blog-card .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.blog .blog-card .card-info span {
+    color: var(--ternary);
+    font-size: .8rem;
+    
+}
+
+section.blog .blog-card .card-info p {
+    font-family: 'lato', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    margin-top: 1rem;
+
+}
+
+section.blog .blog-card .card-info a.read-more {
+    font-size: .8rem;
+}
+
+                            /* Contact part */
+
+section.contact-us {
+    background:var(--light)
+}      
+
+section.contact-us .contact-wrapper {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 4rem;
+}
+
+section.contact-us .contact-wrapper .card {
+    text-align: center;
+}
+
+section.contact-us .contact-wrapper .card img {
+    margin-bottom: 3rem;
+}
+
+section.contact-us .contact-wrapper .card h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact-us .contact-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+section.contact-us .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact-us .input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact-us .input-wrap-2 input {
+    margin-bottom: 2rem;
+}
+
+section.contact-us input {
+    padding: .5rem;
+    border: 1px solid var(--light);
+    font-size: .9rem;
+}
+
+section.contact-us .input-wrap-2 textarea {
+    padding: .5rem;
+    border: 1px solid var(--light);
+    font-size: .9rem;
+}
+
+section.contact-us .input-wrap-2 textarea:focus, section.contact-us input:focus {
+    outline: none;
+}
+
+section.contact-us .btn-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+footer .footer-logo {
+    margin-bottom: 3rem;
+    width: 150px;
+}
+
+footer .footer-socials  a {
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+footer .footer-socials {
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+}
+
+footer .copyright {
+    color: var(--ternary);
+
+}
