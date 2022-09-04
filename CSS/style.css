@@ -350,3 +350,77 @@ section.work .image-wrapper .image-card .overlay a {
     color: var(--secondary);
     text-decoration: none;
 }
+
+
+                            /* Blog part */
+
+section.blog {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.blog .container h1 {
+    color: var(--pure);
+}
+
+section.blog .container p {
+    margin-bottom: 3rem;
+}
+
+section.blog .blog-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+section.blog .blog-card .card-info {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.blog .blog-card .card-info h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-bottom: .5rem;
+}
+
+section.blog .blog-card .card-info a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+section.blog .blog-card .card-info a:hover{
+    color: var(--primary);
+}
+
+section.blog .blog-card .card {
+    background: var(--pure);
+}
+
+
+section.blog .blog-card .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.blog .blog-card .card-info span {
+    color: var(--ternary);
+    font-size: .8rem;
+    
+}
+
+section.blog .blog-card .card-info p {
+    font-family: 'lato', sans-serif;
+    margin-bottom: 1rem;
+    color: var(--ternary);
+    margin-top: 1rem;
+
+}
+
+section.blog .blog-card .card-info a.read-more {
+    font-size: .8rem;
+}
