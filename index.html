@@ -13,20 +13,35 @@
 </head>
 
 <body>
-    <!-- header part -->
-    <header>
+    <!-- hamberger & mobile-navigation part -->
+   <div class="main-site-wrapper">
+    <button class="hamberger">
+        <img src="/images/hamberger.svg" alt="hamberger">
+    </button>
+    <div class="mobile-nav">
+        <button class="times"><img src="./images/times.svg" alt=""></button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>    
+        </ul>
+    </div>
+     <!-- header part -->
+     <header>
         <div class="container">
-            <nav class="flex items-center justify-between">
+            <nav id="main-nav" class="flex items-center justify-between">
                 <div class="left flex items-center ">
                     <div class="branding">
                         <img src="/images/logo.svg" alt="logo">
                     </div>
                     <div>
-                        <a href="#">home</a>
-                        <a href="#">about</a>
-                        <a href="#">services</a>
-                        <a href="#">pages</a>
-                        <a href="#">blog</a>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Pages</a>
+                        <a href="#">Blog</a>
                     </div>
                 </div>
                 <div class="right">
@@ -340,6 +355,7 @@
             Copyright 2019 &copy Name PSD Template. All Right Reserved.
         </div>
     </footer>
+   </div>
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
