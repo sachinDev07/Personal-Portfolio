@@ -614,11 +614,23 @@ footer .copyright {
     header #main-nav {
         display: none;
     }
+  .hero img  {
+    width: 260px;
+  }
+
+  .hero .right h1 {
+    font-size: 3rem;
+  }
+
+  .hero {
+    padding-top: 10rem;
+  }
+
+  header {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+  }
+
 }                 
 
-@media (min-width:848px) {
-    .hamberger {
-        display: none;
-    }
-}
+
 
