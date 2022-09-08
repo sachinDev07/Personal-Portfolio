@@ -16,6 +16,10 @@
     -webkit-font-smotthing:antialiased;
 }
 
+body, html {
+    overflow-x: hidden; 
+    }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -125,7 +129,7 @@ header nav .branding {
                             /* Section part */
 
 section {
-    padding: 6rem;
+    padding: 6rem 0;
 }
 
 section.about .about-me-img {
@@ -561,6 +565,7 @@ footer .copyright {
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
 .hamberger img {
@@ -610,9 +615,14 @@ footer .copyright {
 
 }
 
-@media (max-width: 848px) {
+                   /* For Ipad Size  */
+
+@media (max-width: 992px) {
     header #main-nav {
         display: none;
+    }
+    .hamberger {
+        display: block;
     }
   .hero img  {
     width: 260px;
@@ -628,10 +638,44 @@ footer .copyright {
 
   header {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
-    
   }
 
-}                 
+  section.about .about-me-img {
+    height: 315px;
+  }
 
+  section.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem 2rem;
+ }
+
+ section.reviews .slider .slide {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+}
+
+section.work .image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+section.blog .blog-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+section.blog {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 68% 94%, 0 100%);
+    padding-bottom: 12rem;
+}
+    
+}     
 
 
